@@ -1,0 +1,83 @@
+@charset "UTF-8"
+
+@import '_defaults'
+
+body
+    background-color: #5e5e5e
+    font-family: sans-serif
+    background-image: url("https://i1.rozetka.ua/goods/1832395/13399052_images_1832395588.jpg")
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+
+.container
+    margin: 40px 70px
+    width: 100%
+    width: 600px
+    border: 1px solid #000000
+    background-color: #949494
+    
+    transition: .3s
+    transform: translate(100px, 250px)
+
+.title
+    text-align: center
+    padding: 20px
+    cursor: pointer
+
+.vertical-accordeon
+    display: none
+
+.vertical-accordeon__item
+    cursor: pointer
+    box-shadow:  inset 3px 3px 0 rgba(255, 255, 255, .2)
+    & > div
+        border-top: 1px solid #000000
+    &-title
+        position: relative
+        padding: 10px 20px 10px 20px
+        &_menu
+            transition: .3s
+            padding-left: 30px
+            background-color: #949494
+    &-text, &-descrip
+        display: none
+        padding: 10px 40px
+        background-color: #7a7878
+        line-height: 1.5
+        font-size: .9em
+        font-style: italic
+        transition: .3s
+        &_menu > div + div
+            border-top: 1px solid #000000
+        &_menu
+            font-size: 1em
+            padding: 0
+            font-style: normal
+    &-descrip
+        padding-left: 50px
+        display: none
+    &-btn
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        height: 100%
+        width: calc( 100%)
+        padding: 1px 10px 0 1px
+        position: absolute
+        top: 50%
+        left: 100%
+        transform: translate(calc( -100% ), -50%)
+        cursor: pointer
+
+.item_active
+    display: block
+    transition: .3s
+
+.pusk
+    transition: .3s
+    transform: translate(0, 0)
+
+.shadow
+    box-shadow: inset 3px 3px 1px rgba(0, 0, 0, .2)
+    background-color: rgba(0,0,0,.2)
