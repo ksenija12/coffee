@@ -61,7 +61,7 @@ body {
   width: 100%;
   width: 600px;
   border: 1px solid #000000;
-  background-color: #949494;
+  background-color: #d6d4d4;
   -webkit-transition: .3s;
   transition: .3s;
   -webkit-transform: translate(100px, 250px);
@@ -103,7 +103,7 @@ body {
 .vertical-accordeon__item-text, .vertical-accordeon__item-descrip {
   display: none;
   padding: 10px 40px;
-  background-color: #7a7878;
+  background-color: #919090;
   line-height: 1.5;
   font-size: .9em;
   font-style: italic;
